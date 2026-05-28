@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sanyam | Data Analyst Portfolio</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            color: white;
+            background:
+                linear-gradient(rgba(0, 0, 0, 0.72), rgba(0, 0, 0, 0.72)),
+                url('dha-da-trend.jpg');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            line-height: 1.6;
+        }
+
+        header {
+            width: 100%;
+            padding: 18px 8%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background: rgba(0, 0, 0, 0.65);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            backdrop-filter: blur(8px);
+        }
+
+        .logo {
+            font-size: 24px;
+            font-weight: bold;
+            color: #00e5ff;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin-left: 24px;
+            font-weight: bold;
+            transition: 0.3s;
+        }
+
+        nav a:hover {
+            color: #00e5ff;
+        }
+
+        section {
+            padding: 80px 8%;
+        }
+
+        .hero {
+            min-height: 90vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+        }
+
+        .hero-content {
+            max-width: 850px;
+        }
+
+        .hero h1 {
+            font-size: 52px;
+            margin-bottom: 15px;
+        }
+
+        .hero h1 span {
+            color: #00e5ff;
+        }
+
+        .hero h2 {
+            font-size: 28px;
+            margin-bottom: 20px;
+            color: #f1c40f;
+        }
+
+        .hero p {
+            font-size: 18px;
+            margin-bottom: 30px;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 12px 24px;
+            background: #00e5ff;
+            color: #000;
+            text-decoration: none;
+            border-radius: 30px;
+            font-weight: bold;
+            margin: 8px;
+            transition: 0.3s;
+        }
+
+        .btn:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 0 18px #00e5ff;
+        }
+
+        .btn-outline {
+            background: transparent;
+            border: 2px solid #00e5ff;
+            color: #00e5ff;
+        }
+
+        .btn-outline:hover {
+            background: #00e5ff;
+            color: #000;
+        }
+
+        .section-title {
+            text-align: center;
+            font-size: 36px;
+            margin-bottom: 40px;
+            color: #00e5ff;
+        }
+
+        .about-box,
+        .contact-box {
+            max-width: 900px;
+            margin: auto;
+            background: rgba(255, 255, 255, 0.1);
+            padding: 30px;
+            border-radius: 18px;
+            box-shadow: 0 0 20px rgba(0, 229, 255, 0.2);
+        }
+
+        .about-box p,
+        .contact-box p {
+            font-size: 18px;
+            margin-bottom: 12px;
+        }
+
+        .skills-container,
+        .projects-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 22px;
+        }
+
+        .skill-card,
+        .project-card {
+            background: rgba(255, 255, 255, 0.1);
+            padding: 25px;
+            border-radius: 18px;
+            text-align: center;
+            transition: 0.3s;
+            border: 1px solid rgba(255, 255, 255, 0.15);
+        }
+
+        .skill-card:hover,
+        .project-card:hover {
+            transform: scale(1.07);
+            background: rgba(0, 229, 255, 0.18);
+            box-shadow: 0 0 20px rgba(0, 229, 255, 0.45);
+        }
+
+        .skill-card h3,
+        .project-card h3 {
+            color: #f1c40f;
+            margin-bottom: 12px;
+        }
+
+        .project-card p {
+            font-size: 15px;
+        }
+
+        .contact-box {
+            text-align: center;
+        }
+
+        .contact-box a {
+            color: #00e5ff;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        footer {
+            text-align: center;
+            padding: 22px;
+            background: rgba(0, 0, 0, 0.75);
+            color: #ddd;
+        }
+
+        @media (max-width: 768px) {
+            header {
+                flex-direction: column;
+                gap: 12px;
+                padding: 15px 5%;
+            }
+
+            nav a {
+                margin: 0 8px;
+                font-size: 14px;
+            }
+
+            section {
+                padding: 60px 5%;
+            }
+
+            .hero h1 {
+                font-size: 36px;
+            }
+
+            .hero h2 {
+                font-size: 22px;
+            }
+
+            .hero p {
+                font-size: 16px;
+            }
+
+            .section-title {
+                font-size: 30px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            nav {
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: center;
+                gap: 8px;
+            }
+
+            nav a {
+                margin: 0;
+            }
+
+            .hero h1 {
+                font-size: 30px;
+            }
+
+            .btn {
+                width: 100%;
+                max-width: 260px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="logo">Sanyam</div>
+        <nav>
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#skills">Skills</a>
+            <a href="#projects">Projects</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+    <section class="hero" id="home">
+        <div class="hero-content">
+            <h1>Hi, I am <span>Sanyam</span></h1>
+            <h2>Aspiring Data Analyst</h2>
+            <p>
+                I am a final-year BCA student learning Data Analytics with skills in Excel,
+                SQL, Python, Pandas, Power BI, and basic web development. I enjoy finding useful
+                insights from data and presenting them in a simple way.
+            </p>
+            <a href="#projects" class="btn">View My Projects</a>
+            <a href="https://www.linkedin.com/in/sanyam-7926a4359/" target="_blank" class="btn btn-outline">LinkedIn Profile</a>
+        </div>
+    </section>
+
+    <section id="about">
+        <h2 class="section-title">About Me</h2>
+        <div class="about-box">
+            <p>
+                My name is Sanyam. I am currently in the final year of BCA and preparing for a
+                career as a Data Analyst. I have completed a Data Analytics course and practiced
+                tools like Excel, SQL, Python, Pandas, Matplotlib, and Power BI.
+            </p>
+            <p>
+                I also have experience working as a Customer Service Associate at Amazon, where I
+                improved my communication, problem-solving, and customer handling skills.
+            </p>
+            <p>
+                My goal is to get a Data Analyst internship and build strong real-world projects.
+            </p>
+        </div>
+    </section>
+
+    <section id="skills">
+        <h2 class="section-title">My Skills</h2>
+        <div class="skills-container">
+            <div class="skill-card">
+                <h3>Excel</h3>
+                <p>VLOOKUP, XLOOKUP, Pivot Tables, Sorting, Filtering, Charts, and Data Cleaning.</p>
+            </div>
+
+            <div class="skill-card">
+                <h3>SQL</h3>
+                <p>SELECT, WHERE, GROUP BY, JOIN, ORDER BY, aggregate functions, and window functions.</p>
+            </div>
+
+            <div class="skill-card">
+                <h3>Python</h3>
+                <p>Basic Python, conditions, loops, functions, lists, dictionaries, and data logic.</p>
+            </div>
+
+            <div class="skill-card">
+                <h3>Pandas</h3>
+                <p>DataFrames, filtering, grouping, cleaning columns, sum, mean, max, and analysis.</p>
+            </div>
+
+            <div class="skill-card">
+                <h3>NumPy</h3>
+                <p>Worked with arrays, numerical operations, calculations, and basic data processing.</p>
+            </div>
+
+            <div class="skill-card">
+                <h3>Matplotlib</h3>
+                <p>Created bar charts, line charts, labels, and basic data visualizations using Python.</p>
+            </div>
+
+            <div class="skill-card">
+                <h3>Seaborn</h3>
+                <p>Used Seaborn for statistical plots, visual analysis, and cleaner chart designs.</p>
+            </div>
+
+            <div class="skill-card">
+                <h3>Statistics</h3>
+                <p>Basic understanding of averages, percentages, trends, distributions, and data interpretation.</p>
+            </div>
+
+            <div class="skill-card">
+                <h3>Power BI</h3>
+                <p>Dashboard building, charts, basic reports, and data visualization.</p>
+            </div>
+
+            <div class="skill-card">
+                <h3>Tableau</h3>
+                <p>Basic dashboard creation, charts, filters, and interactive business reports.</p>
+            </div>
+
+            <div class="skill-card">
+                <h3>Web Development</h3>
+                <p>HTML, CSS, responsive design, portfolio website, and simple styling.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects">
+        <h2 class="section-title">Projects</h2>
+        <div class="projects-container">
+            <div class="project-card">
+                <h3>Sales Analysis Project</h3>
+                <p>
+                    Analyzed sales data using Python and Pandas to find top products, top cities,
+                    total sales, and useful business insights.
+                </p>
+            </div>
+
+            <div class="project-card">
+                <h3>Excel Dashboard</h3>
+                <p>
+                    Created practice dashboards using Pivot Tables, charts, filters, and category-wise sales analysis.
+                </p>
+            </div>
+
+            <div class="project-card">
+                <h3>SQL Practice Project</h3>
+                <p>
+                    Used SQL queries to analyze employee, customer, order, city, product, and salary data.
+                </p>
+            </div>
+
+            <div class="project-card">
+                <h3>Portfolio Website</h3>
+                <p>
+                    Built this responsive personal portfolio website using HTML and CSS to showcase my skills.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact">
+        <h2 class="section-title">Contact Me</h2>
+        <div class="contact-box">
+            <p><strong>Email:</strong> <a href="mailto:saiyamchagtie@gmail.com">saiyamchagtie@gmail.com</a></p>
+            <p><strong>Phone:</strong> <a href="tel:8146138100">8146138100</a></p>
+            <p><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/sanyam-7926a4359/" target="_blank">Visit My LinkedIn</a></p>
+        </div>
+    </section>
+
+    <footer>
+        <p>© 2026 Sanyam | Data Analyst Portfolio</p>
+    </footer>
+</body>
+</html>
