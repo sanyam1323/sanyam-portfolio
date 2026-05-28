@@ -1,8 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sanyam | Data Analyst Portfolio</title>
 
     <style>
@@ -22,6 +23,7 @@
             background:
                 linear-gradient(rgba(0, 0, 0, 0.72), rgba(0, 0, 0, 0.72)),
                 url('dha-da-trend.jpg');
+
             background-size: cover;
             background-position: center;
             background-attachment: fixed;
@@ -98,9 +100,10 @@
         .btn {
             display: inline-block;
             padding: 12px 24px;
-            background: #00e5ff;
-            color: #000;
+            background: transparent;
+            color: #00e5ff;
             text-decoration: none;
+            border: 2px solid #00e5ff;
             border-radius: 30px;
             font-weight: bold;
             margin: 8px;
@@ -108,6 +111,8 @@
         }
 
         .btn:hover {
+            background: #00e5ff;
+            color: black;
             transform: translateY(-4px);
             box-shadow: 0 0 18px #00e5ff;
         }
@@ -120,7 +125,9 @@
 
         .btn-outline:hover {
             background: #00e5ff;
-            color: #000;
+            color: black;
+            transform: translateY(-4px);
+            box-shadow: 0 0 18px #00e5ff;
         }
 
         .section-title {
@@ -134,10 +141,10 @@
         .contact-box {
             max-width: 900px;
             margin: auto;
-            background: rgba(255, 255, 255, 0.1);
+            background: rgba(255, 255, 255, 0.08);
             padding: 30px;
             border-radius: 18px;
-            box-shadow: 0 0 20px rgba(0, 229, 255, 0.2);
+            box-shadow: 0 0 20px rgba(0, 229, 255, 0.15);
         }
 
         .about-box p,
@@ -155,12 +162,12 @@
 
         .skill-card,
         .project-card {
-            background: rgba(255, 255, 255, 0.1);
+            background: rgba(255, 255, 255, 0.08);
             padding: 25px;
             border-radius: 18px;
             text-align: center;
             transition: 0.3s;
-            border: 1px solid rgba(255, 255, 255, 0.15);
+            border: 1px solid rgba(255, 255, 255, 0.1);
         }
 
         .skill-card:hover,
@@ -255,8 +262,10 @@
 </head>
 
 <body>
+
     <header>
         <div class="logo">Sanyam</div>
+
         <nav>
             <a href="#home">Home</a>
             <a href="#about">About</a>
@@ -268,141 +277,214 @@
 
     <section class="hero" id="home">
         <div class="hero-content">
+
             <h1>Hi, I am <span>Sanyam</span></h1>
+
             <h2>Aspiring Data Analyst</h2>
+
             <p>
-                I am a final-year BCA student learning Data Analytics with skills in Excel,
-                SQL, Python, Pandas, Power BI, and basic web development. I enjoy finding useful
-                insights from data and presenting them in a simple way.
+                Final-year BCA student passionate about Data Analytics,
+                SQL, Python, Excel, Power BI, Tableau, and Business Insights.
             </p>
+
             <a href="#projects" class="btn">View My Projects</a>
-            <a href="https://www.linkedin.com/in/sanyam-7926a4359/" target="_blank" class="btn btn-outline">LinkedIn Profile</a>
+
+            <a href="https://www.linkedin.com/in/sanyam-7926a4359/"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="btn btn-outline">
+
+                LinkedIn Profile
+
+            </a>
+
         </div>
     </section>
 
     <section id="about">
+
         <h2 class="section-title">About Me</h2>
+
         <div class="about-box">
+
             <p>
-                My name is Sanyam. I am currently in the final year of BCA and preparing for a
-                career as a Data Analyst. I have completed a Data Analytics course and practiced
-                tools like Excel, SQL, Python, Pandas, Matplotlib, and Power BI.
+                My name is Sanyam. I am currently pursuing my BCA final year
+                and preparing for a career as a Data Analyst.
             </p>
+
             <p>
-                I also have experience working as a Customer Service Associate at Amazon, where I
-                improved my communication, problem-solving, and customer handling skills.
+                I completed a Data Analytics course where I learned Excel,
+                SQL, Python, Pandas, NumPy, Matplotlib, Seaborn,
+                Power BI, and Tableau.
             </p>
+
             <p>
-                My goal is to get a Data Analyst internship and build strong real-world projects.
+                I also worked as a Customer Service Associate at Amazon,
+                where I improved communication and problem-solving skills.
             </p>
+
+            <p>
+                My goal is to get a Data Analyst internship
+                and work on real-world business problems.
+            </p>
+
         </div>
+
     </section>
 
     <section id="skills">
+
         <h2 class="section-title">My Skills</h2>
+
         <div class="skills-container">
+
             <div class="skill-card">
                 <h3>Excel</h3>
-                <p>VLOOKUP, XLOOKUP, Pivot Tables, Sorting, Filtering, Charts, and Data Cleaning.</p>
+                <p>Pivot Tables, VLOOKUP, XLOOKUP, Charts, Data Cleaning.</p>
             </div>
 
             <div class="skill-card">
                 <h3>SQL</h3>
-                <p>SELECT, WHERE, GROUP BY, JOIN, ORDER BY, aggregate functions, and window functions.</p>
+                <p>JOIN, GROUP BY, Window Functions, Queries, Analysis.</p>
             </div>
 
             <div class="skill-card">
                 <h3>Python</h3>
-                <p>Basic Python, conditions, loops, functions, lists, dictionaries, and data logic.</p>
+                <p>Loops, Functions, Conditions, Data Logic.</p>
             </div>
 
             <div class="skill-card">
                 <h3>Pandas</h3>
-                <p>DataFrames, filtering, grouping, cleaning columns, sum, mean, max, and analysis.</p>
+                <p>Filtering, Grouping, Cleaning, Data Analysis.</p>
             </div>
 
             <div class="skill-card">
                 <h3>NumPy</h3>
-                <p>Worked with arrays, numerical operations, calculations, and basic data processing.</p>
+                <p>Arrays, Numerical Operations, Calculations.</p>
             </div>
 
             <div class="skill-card">
                 <h3>Matplotlib</h3>
-                <p>Created bar charts, line charts, labels, and basic data visualizations using Python.</p>
+                <p>Bar Charts, Line Charts, Data Visualization.</p>
             </div>
 
             <div class="skill-card">
                 <h3>Seaborn</h3>
-                <p>Used Seaborn for statistical plots, visual analysis, and cleaner chart designs.</p>
+                <p>Statistical Graphs and Beautiful Visualizations.</p>
             </div>
 
             <div class="skill-card">
                 <h3>Statistics</h3>
-                <p>Basic understanding of averages, percentages, trends, distributions, and data interpretation.</p>
+                <p>Average, Trends, Percentages, Data Understanding.</p>
             </div>
 
             <div class="skill-card">
                 <h3>Power BI</h3>
-                <p>Dashboard building, charts, basic reports, and data visualization.</p>
+                <p>Dashboards, Reports, Business Insights.</p>
             </div>
 
             <div class="skill-card">
                 <h3>Tableau</h3>
-                <p>Basic dashboard creation, charts, filters, and interactive business reports.</p>
+                <p>Interactive Dashboards and Reports.</p>
             </div>
 
             <div class="skill-card">
                 <h3>Web Development</h3>
-                <p>HTML, CSS, responsive design, portfolio website, and simple styling.</p>
+                <p>HTML, CSS, Responsive Portfolio Websites.</p>
             </div>
+
         </div>
+
     </section>
 
     <section id="projects">
+
         <h2 class="section-title">Projects</h2>
+
         <div class="projects-container">
+
             <div class="project-card">
                 <h3>Sales Analysis Project</h3>
+
                 <p>
-                    Analyzed sales data using Python and Pandas to find top products, top cities,
-                    total sales, and useful business insights.
+                    Analyzed sales data using Python and Pandas
+                    to identify top-selling products and business insights.
                 </p>
             </div>
 
             <div class="project-card">
                 <h3>Excel Dashboard</h3>
+
                 <p>
-                    Created practice dashboards using Pivot Tables, charts, filters, and category-wise sales analysis.
+                    Created dashboards using Pivot Tables,
+                    Filters, Charts, and Sales Analysis.
                 </p>
             </div>
 
             <div class="project-card">
-                <h3>SQL Practice Project</h3>
+                <h3>SQL Analysis Project</h3>
+
                 <p>
-                    Used SQL queries to analyze employee, customer, order, city, product, and salary data.
+                    Used SQL queries to analyze employee,
+                    customer, order, and product data.
                 </p>
             </div>
 
             <div class="project-card">
                 <h3>Portfolio Website</h3>
+
                 <p>
-                    Built this responsive personal portfolio website using HTML and CSS to showcase my skills.
+                    Built a fully responsive portfolio website
+                    using HTML and CSS.
                 </p>
             </div>
+
         </div>
+
     </section>
 
     <section id="contact">
+
         <h2 class="section-title">Contact Me</h2>
+
         <div class="contact-box">
-            <p><strong>Email:</strong> <a href="mailto:saiyamchagtie@gmail.com">saiyamchagtie@gmail.com</a></p>
-            <p><strong>Phone:</strong> <a href="tel:8146138100">8146138100</a></p>
-            <p><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/sanyam-7926a4359/" target="_blank">Visit My LinkedIn</a></p>
+
+            <p>
+                <strong>Email:</strong>
+
+                <a href="mailto:saiyamchagtie@gmail.com">
+                    saiyamchagtie@gmail.com
+                </a>
+            </p>
+
+            <p>
+                <strong>Phone:</strong>
+
+                <a href="tel:8146138100">
+                    8146138100
+                </a>
+            </p>
+
+            <p>
+                <strong>LinkedIn:</strong>
+
+                <a href="https://www.linkedin.com/in/sanyam-7926a4359/"
+                    target="_blank"
+                    rel="noopener noreferrer">
+
+                    LinkedIn Profile
+
+                </a>
+            </p>
+
         </div>
+
     </section>
 
     <footer>
         <p>© 2026 Sanyam | Data Analyst Portfolio</p>
     </footer>
+
 </body>
+
 </html>
